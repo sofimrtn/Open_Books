@@ -1,16 +1,14 @@
 <?php
-session_start();
 
 if (isset($_SESSION['current_user'])) {
     $email = $_SESSION['current_user']['email'];
 
     try {
-        $driver = new mysqli_driver();
-        $driver->report_mode = MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT;
+        $driver = mysqli_init();
+            $driver->report_mode = MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT;
 
-        $connection = new mysqli('localhost', 'root', '');
+            $connection = mysqli_real_connect($driver, 'openbooksserver.mysql.database.azure.com', 'smartin@openbooksserver', 'RESTALLON123#', 'library_sew', 3306);
 
-         $result = $connection->select_db('library_sew');
          $statement = $connection->prepare('SELECT ISBN, Title, user, portada FROM book WHERE user = ?');
          $statement->bind_param('s', $email);
          $statement->bind_result($isbn, $title, $user, $portada);
