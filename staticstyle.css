@@ -46,7 +46,8 @@ body {
 
 h1 {
     background: #228B22;
-    width: 100%;
+    width: 96.7%;
+    margin: 0 auto;
     text-align: center;
     color: white;
     padding: 50px 25px;
@@ -173,5 +174,35 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+#boton{
+    border: 2px solid #228B22;
+    padding: 28px 50px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-size: larger;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2.75em;
+    border-radius: 1em;
+}
+
+#boton:hover{
+    background-color: #228B22;
+    color: white;
+}
+
+article.botones{
+    margin: 0 auto;
+    border: 5px solid dimgrey;
+    background-color: lightgrey;
+    width: 550px;
+    height: 200px;
+    padding: 16px;
+    margin-top: 2em;
+    border-radius: 1em;
+}
+
 
 
