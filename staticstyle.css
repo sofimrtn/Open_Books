@@ -1,0 +1,177 @@
+table {
+    font-family: "Roboto Light",sans-serif;
+    margin: 0 auto;
+}
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    font-family: Roboto,sans-serif;
+    background-color: darkslategray;
+    color: white;
+}
+
+img {
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+}
+#classic1,#classic2,#classic3,#classic4,#classic5,#classic6,#classic7,#classic8,#classic9, #classic10 {
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border-radius: 3em;
+    float: left;
+}
+#author1,#author2, #author3, #author4, #author5, #author6, #author7, #author8, #author9, #author10 {
+    width: 30%;
+    height: 30%;
+}
+body {
+    font-family: "Roboto Light", sans-serif;
+}
+
+.container {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+h1 {
+    background: #228B22;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 50px 25px;
+    font-family: Roboto,sans-serif;
+}
+section {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+#heart{
+    height: 8em;
+    width: 8em;
+    margin-left: 15px;
+    float: left;
+    border: none;
+}
+
+article.book{
+    border: 2px solid gainsboro;
+    padding: 10px;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: steelblue;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#map {
+    height: 500px;
+    width: 70%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+

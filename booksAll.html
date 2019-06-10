@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Book List</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="staticstyle.css"/>
+    <script src="public/loadXML.js"></script>
+    <script src="public/dragAndDrop.js"></script>
+</head>
+<body>
+<div class="sidebar">
+    <a href="public/myBooks.php">Home</a>
+    <a href="booksAll.html">All Books</a>
+    <a href="authors.html">Authors</a>
+    <a href="clasics.html">Clasics</a>
+    <a href="bestSellings.html">Best Sellings</a>
+    <a href="series.html">Series</a>
+    <a href="events.html">Events</a>
+    <a href="guide.html">Guide</a>
+    <a href="index.html">Index</a>
+    <div ondragover="operationDragAndDropCurrent.allowDrop(event)" ondrop="operationDragAndDropCurrent.drop(event)">
+        <img id="heart" src="static/img/heart.png" alt="heart">
+    </div>
+</div>
+<article class="container">
+<h1>All Books</h1>
+    <button class="button" onclick = "loadedBooks.printXML()"><span>Show all books</span></button>
+    <section id="books"><h2> </h2></section>
+</article>
+</body>
+</html>
