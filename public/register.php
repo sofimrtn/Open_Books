@@ -5,9 +5,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 
 try {
-    $connection = new mysqli('localhost', 'root', '');
-    echo 'connect success';
-     $result = $connection->select_db('library_sew');
+    $connection = mysqli_real_connect($driver, 'openbooksserver.mysql.database.azure.com', 'smartin@openbooksserver', 'RESTALLON123#', 'library_sew', 3306);
      $statement = $connection->prepare('INSERT INTO user (email, password, name) VALUES (?, SHA1(?), ?);');
      $statement->bind_param('sss', $email, $password, $name);
      $result = $statement->execute();
