@@ -4,11 +4,10 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 
 try {
-    //$driver = new mysqli_driver();
-    //$driver->report_mode = MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT;
-    $con=mysqli_init();
-    mysqli_ssl_set($con, NULL, NULL, NULL, NULL, NULL);
-    $connection = mysqli_real_connect($con, "openbooksdb.mysql.database.azure.com", "smartin@openbooksdb","RESTALLON123#","library_sew", 3306);
+    $driver = new mysqli_driver();
+    $driver->report_mode = MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT;
+
+    $connection = new mysqli('openbooksdb.mysql.database.azure.com', 'smartin@openbooksdb', 'RESTALLON123#', 'library_sew', 3306);
 
      $result = $connection->select_db('library_sew');
      $statement = $connection->prepare('SELECT email, name FROM user WHERE email = ? AND password = SHA1(?)');
