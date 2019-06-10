@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE shops [
+        <!ELEMENT shops (shop)+>
+        <!ELEMENT shop (name,address,coordinates,description,phone,url,
+        pictures)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT address (#PCDATA)>
+        <!ELEMENT coordinates (latitude,longitude)>
+        <!ELEMENT description (#PCDATA)>
+        <!ELEMENT phone (#PCDATA)>
+        <!ELEMENT url (#PCDATA)>
+        <!ELEMENT pictures (picture)+>
+        <!ELEMENT latitude (#PCDATA)>
+        <!ELEMENT longitude (#PCDATA)>
+        <!ELEMENT picture EMPTY>
+        <!ATTLIST picture
+        xmlns CDATA #FIXED ''
+        source CDATA #IMPLIED>
+        ]>
+
+<shops>
+    <shop>
+        <name>Casa del Libro</name>
+        <address>Calle Palacio Valdés, 13, 33002 Oviedo, Asturias</address>
+        <coordinates>
+            <latitude>43.3641037</latitude>
+            <longitude>-5.8498177</longitude>
+        </coordinates>
+        <description>Libros por temáticas y autores, ebooks y películas en librería generalista con agenda de
+            eventos culturales.</description>
+        <phone> 902 57 56 08</phone>
+        <url>https://www.casadellibro.com/</url>
+        <pictures>
+            <picture source="static/img/oviedo1.jpg"/>
+            <picture source="static/img/casaOviedo.jpg"/>
+        </pictures>
+    </shop>
+    <!--###########-->
+    <shop>
+        <name>Libería Cervantes</name>
+        <address>Calle Dr. Casal, 9, 33001 Oviedo, Asturias</address>
+        <coordinates>
+            <latitude>43.3654051</latitude>
+            <longitude>-5.8505072</longitude>
+        </coordinates>
+        <description>Librería general con sofás que ofrece e-books, organiza presentaciones y foros y envía a
+            domicilio.</description>
+        <phone>985 20 77 61</phone>
+        <url>https://www.cervantes.com/</url>
+        <pictures>
+            <picture source="static/img/Cervantes-entrada.png"/>
+            <picture source=" "/>
+        </pictures>
+    </shop>
+    <!--###########-->
+    <shop>
+        <name>Librería Central</name>
+        <address>Calle San Bernardo, 31, 33201 Gijón, Asturias</address>
+        <coordinates>
+            <latitude>43.5426344</latitude>
+            <longitude>-5.6617891</longitude>
+        </coordinates>
+        <description>Dos amplias plantas con múltiples títulos, zona para tomar café, cuentacuentos y presentaciones
+            de libros.</description>
+        <phone>985 17 00 80</phone>
+        <url>https://libroscentral.com/</url>
+        <pictures>
+            <picture source=" "/>
+        </pictures>
+    </shop>
+    <!--###########-->
+    <shop>
+        <name>Libreria Nautica San Esteban</name>
+        <address>Calle San Antonio, 13, 33201 Gijón, Asturias</address>
+        <coordinates>
+            <latitude>43.543452</latitude>
+            <longitude>-5.6641933</longitude>
+        </coordinates>
+        <description>Un espacio decorado con artilugios marinos donde destacan libros, cartas náuticas y
+            globos terráqueos.</description>
+        <phone>985 35 97 78</phone>
+        <url>https://www.librerianauticasanesteban.com/</url>
+        <pictures>
+            <picture source=" "/>
+            <picture source=" "/>
+            <picture source=" "/>
+        </pictures>
+    </shop>
+    <!--###########-->
+    <shop>
+        <name>Clarín</name>
+        <address>Calle Alcalde Francisco Orejas Sierra, 4, 33401 Avilés, Asturias</address>
+        <coordinates>
+            <latitude>43.5567751</latitude>
+            <longitude>-5.9276603</longitude>
+        </coordinates>
+        <description>Libros y material de oficina</description>
+        <phone>985 56 39 93</phone>
+        <url>http://www.libreriaclarin.es/clarin_css/index.php</url>
+        <pictures>
+            <picture></picture>
+        </pictures>
+    </shop>
+    <!--###########-->
+    <shop>
+        <name>Librería Campoamor</name>
+        <address>Calle Campoamor, 2, 33900 Langreo, Asturias</address>
+        <coordinates>
+            <latitude>43.2960489</latitude>
+            <longitude>-5.6829132</longitude>
+        </coordinates>
+        <description>Variedad de libros y material de oficina</description>
+        <phone> 985 67 44 25</phone>
+        <url>https://libreriascampoamor.com/</url>
+        <pictures>
+            <picture source=" "/>
+            <picture source=" "/>
+        </pictures>
+    </shop>
+    <!--###########-->
+    <shop>
+        <name>Hangar Rebelde</name>
+        <address>Alvarez Buylla, 3, 33005 Oviedo, Asturias</address>
+        <coordinates>
+            <latitude>43.3595201</latitude>
+            <longitude>-5.8598636</longitude>
+        </coordinates>
+        <description>Pequeña librería especializada en cómics, novelas de fantasía, juegos de rol y
+            cartas coleccionables.</description>
+        <phone>984 28 22 45</phone>
+        <url>https://www.facebook.com/hangarrebelde</url>
+        <pictures>
+            <picture source=" "/>
+            <picture source=" "/>
+            <picture source=" "/>
+        </pictures>
+    </shop>
+</shops>

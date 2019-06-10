@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libros [
+
+        <!ELEMENT libros (libro)+>
+        <!ELEMENT libro (titulo,autores,año,editorial,ediciones,puntuacion,
+                sinopsis,portada,comentarios)>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT autores (autor)+>
+        <!ELEMENT año (#PCDATA)>
+        <!ELEMENT ediciones (edicion)+>
+        <!ELEMENT puntuacion (#PCDATA)>
+        <!ELEMENT sinopsis (#PCDATA)>
+        <!ELEMENT portada (#PCDATA)>
+        <!ELEMENT comentarios (comentario)+>
+        <!ELEMENT autor (nombre,apellidos,nacionalidad)>
+        <!ELEMENT edicion (numero,formato,editorial,idiomas)>
+        <!ELEMENT comentario (usuario,contenido,fecha)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT apellidos (#PCDATA)>
+        <!ELEMENT nacionalidad (#PCDATA)>
+        <!ELEMENT numero (#PCDATA)>
+        <!ELEMENT formato (#PCDATA)>
+        <!ELEMENT idiomas (idioma)+>
+        <!ELEMENT usuario (#PCDATA)>
+        <!ELEMENT contenido (#PCDATA)>
+        <!ELEMENT fecha (#PCDATA)>
+        <!ELEMENT idioma (id,paginas,isbn)>
+        <!ELEMENT id (#PCDATA)>
+        <!ELEMENT paginas (#PCDATA)>
+        <!ELEMENT isbn (isbn10,isbn13)>
+        <!ELEMENT isbn10 (#PCDATA)>
+        <!ELEMENT isbn13 (#PCDATA)>
+        <!ELEMENT editorial (#PCDATA)>
+        ]>
+<libros>
+    <libro>
+        <titulo>Presumed Innocent</titulo>
+        <autores>
+            <autor>
+                <nombre>Scott</nombre>
+                <apellidos>Turrow</apellidos>
+                <nacionalidad>American</nacionalidad>
+            </autor>
+        </autores>
+        <año>1986</año>
+        <editorial>Warner Books Inc</editorial>
+        <ediciones>
+            <edicion>
+                <numero>1st</numero>
+                <formato>Kindle</formato>
+                <editorial>Farrar, Straus and Giroux</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>435</paginas>
+                        <isbn>
+                            <isbn10>ASIN: B003R7LCQE</isbn10>
+                            <isbn13>B003R7LCQE</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+            <edicion>
+                <numero>3rd</numero>
+                <formato>Paperback</formato>
+                <editorial>Grand Central Publishing</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>496</paginas>
+                        <isbn>
+                            <isbn10>1478948450</isbn10>
+                            <isbn13>9781478948452</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+            <edicion>
+                <numero>2nd</numero>
+                <formato>Hardcover</formato>
+                <editorial>Farrar, Straus and Giroux</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>431</paginas>
+                        <isbn>
+                            <isbn10>0374237131</isbn10>
+                            <isbn13>9780374237134</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+        </ediciones>
+        <puntuacion>4.11</puntuacion>
+        <sinopsis>Hailed as the most suspenseful and compelling novel in decades. Presumed Innocent brings to life our
+            worst nightmare: that of an ordinary citizen facing conviction for the most terrible of all crimes. It's the
+            stunning portrayal of one man's all-too-human, all-consuming fatal attraction for a passionate woman who is
+            not his wife, and the story of how his obsession puts everything he loves and values on trial--including his
+            own life. It's a book that lays bare a shocking world of betrayal and murder, as well as the hidden depths of
+            the human heart. And it will hold you and haunt you...long after you have reached its shattering conclusion.
+        </sinopsis>
+        <portada>http://covers.openlibrary.org/b/isbn/0374237131-M.jpg</portada>
+        <comentarios>
+            <comentario>
+                <usuario>DeSye</usuario>
+                <contenido>This is a terrific murder mystery, as well as being a fun legal thriller. Having spent decades
+                    as a lawyer, I often find that books featuring lawyers, the law, and courtroom scenes often contain
+                    errors – and this one doesn’t! (It completely messes with my suspension of disbelief if in legal
+                    fiction, I end up thinking, “That wouldn’t have been allowed.”)</contenido>
+                <fecha>Mar 12, 2018</fecha>
+            </comentario>
+            <comentario>
+                <usuario>Laura</usuario>
+                <contenido>4.5 stars ... It was just a little too long. Otherwise, this was a stellar reading experience.</contenido>
+                <fecha>Jun 17, 2017</fecha>
+            </comentario>
+        </comentarios>
+    </libro>
+    <!--- +++++++++++++++++++++++++++++++ -->
+    <libro>
+        <titulo>The Hunter (The Killer)</titulo>
+        <autores>
+            <autor>
+                <nombre>Tom</nombre>
+                <apellidos>Wood</apellidos>
+                <nacionalidad>British</nacionalidad>
+            </autor>
+        </autores>
+        <año>2010</año>
+        <editorial>Brown Book Group</editorial>
+        <ediciones>
+            <edicion>
+                <numero>1st</numero>
+                <formato>Kindle</formato>
+                <editorial></editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas></paginas>
+                        <isbn>
+                            <isbn10>ASIN: B003GWX8GC</isbn10>
+                            <isbn13>B003GWX8GC</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+            <edicion>
+                <numero>3rd</numero>
+                <formato>Paperback</formato>
+                <editorial>Brown Book Group</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>532</paginas>
+                        <isbn>
+                            <isbn10>0751545309</isbn10>
+                            <isbn13>9780751545302</isbn13>
+                        </isbn>
+                    </idioma>
+                    <idioma>
+                        <id>Spanish</id>
+                        <paginas>568</paginas>
+                        <isbn>
+                            <isbn10>0751545310</isbn10>
+                            <isbn13>9780751545303</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+            <edicion>
+                <numero>2nd</numero>
+                <formato>Hardcover</formato>
+                <editorial>Thomas Dunne Books</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>336</paginas>
+                        <isbn>
+                            <isbn10>031255804X</isbn10>
+                            <isbn13>9780751545302</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+        </ediciones>
+        <puntuacion>4.5</puntuacion>
+        <sinopsis>Forget James Bond. Forget Jason Bourne. Forget Jack Bauer. Meet Victor: He's an assassin--a man with
+            the no past and no surname. But when a job in Paris goes spectacularly wrong, Victor finds himself running
+            for his life across four continents accompanied by a woman too beautiful to trust . . . pursued by enemies
+            too powerful to escape.
+        </sinopsis>
+        <portada>http://covers.openlibrary.org/b/isbn/0751545309-M.jpg</portada>
+        <comentarios>
+            <comentario>
+                <usuario>NArey</usuario>
+                <contenido>Wow..I thought that this was a really amazing book and just my type, my brother-in-law lent
+                    me this book as I love these kind of books, I hadn't read a book by Tom Wood before but would
+                    definitely read all of his books! It featured the amazing Victor, who even though he is an assassin
+                    he is definitely my favourite character! It is a fast paced and unpredictable book with plenty of
+                    twists and turns, just when you think you know what is going to happen next it has an unpredictable
+                    turn and throws you off guard.</contenido>
+                <fecha>Jan 02, 2015</fecha>
+            </comentario>
+            <comentario>
+                <usuario>Hayat</usuario>
+                <contenido>Since July 2015 I've read this book three times! It definitely deserves to be bumped up from 4 to 5 stars!</contenido>
+                <fecha>Sept 14, 2017</fecha>
+            </comentario>
+        </comentarios>
+    </libro>
+    <!--- +++++++++++++++++++++++++++++++ -->
+    <libro>
+        <titulo>One Way Trip</titulo>
+        <autores>
+            <autor>
+                <nombre>Scott</nombre>
+                <apellidos>McEwen</apellidos>
+                <nacionalidad>American</nacionalidad>
+            </autor>
+            <autor>
+                <nombre>Thomas</nombre>
+                <apellidos>Koloniar</apellidos>
+                <nacionalidad></nacionalidad>
+            </autor>
+        </autores>
+        <año>2013</año>
+        <editorial>TouchStone</editorial>
+        <ediciones>
+            <edicion>
+                <numero>2nd</numero>
+                <formato>Kindle</formato>
+                <editorial>TouchStone</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>400</paginas>
+                        <isbn>
+                            <isbn10>ASIN: B00BSBVJ5A</isbn10>
+                            <isbn13>B00BSBVJ5A</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+            <edicion>
+                <numero>3rd</numero>
+                <formato>Paperback</formato>
+                <editorial>Pocket Books</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>532</paginas>
+                        <isbn>
+                            <isbn10>1476746699</isbn10>
+                            <isbn13>9781476746692</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+            <edicion>
+                <numero>1st</numero>
+                <formato>Hardcover</formato>
+                <editorial>TouchStone</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>400</paginas>
+                        <isbn>
+                            <isbn10>1476746052</isbn10>
+                            <isbn13>9781476746050</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+        </ediciones>
+        <puntuacion>4.25</puntuacion>
+        <sinopsis>From the coauthor of Chris Kyle’s #1 New York Times bestseller, American Sniper: In direct defiance of
+            the president’s orders, Navy Master Chief Gil Shannon, one of America’s most lethal SEAL snipers, launches a
+            bold mission comprised of SEAL Team Six and Delta Force fighters to free a captured female helicopter pilot
+            being held by Taliban insurgents in Afghanistan.
+        </sinopsis>
+        <portada>http://covers.openlibrary.org/b/isbn/1501120719-M.jpg</portada>
+        <comentarios>
+            <comentario>
+                <usuario>Paladdin</usuario>
+                <contenido>Okay, this one drew me in. I've had a string of what I'd call...mediocre reads lately. the
+                    best I could go was 3 on a lot of them and one series as I hit the second book simply (for me anyway)
+                    crashed and burned.</contenido>
+                <fecha>May 20, 2015</fecha>
+            </comentario>
+        </comentarios>
+    </libro>
+    <!--- +++++++++++++++++++++++++++++++ -->
+    <libro>
+        <titulo>The Outsider</titulo>
+        <autores>
+            <autor>
+                <nombre>Stephen</nombre>
+                <apellidos>King</apellidos>
+                <nacionalidad>American</nacionalidad>
+            </autor>
+        </autores>
+        <año>2018</año>
+        <editorial>Scribner</editorial>
+        <ediciones>
+            <edicion>
+                <numero>2nd</numero>
+                <formato>Paperback</formato>
+                <editorial>Plaza Janes Editores</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>Spanish</id>
+                        <paginas>592</paginas>
+                        <isbn>
+                            <isbn10>9788401021190</isbn10>
+                            <isbn13>9788401021190</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+            <edicion>
+                <numero>3rd</numero>
+                <formato>Kindle</formato>
+                <editorial>Scribner</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>577</paginas>
+                        <isbn>
+                            <isbn10>B078M5G7XH</isbn10>
+                            <isbn13>B078M5G7XH</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+            <edicion>
+                <numero>1st</numero>
+                <formato>Hardcover</formato>
+                <editorial>Scribner</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>561</paginas>
+                        <isbn>
+                            <isbn10>1501180983</isbn10>
+                            <isbn13>9781501180989</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+        </ediciones>
+        <puntuacion>4.03</puntuacion>
+        <sinopsis>An eleven-year-old boy’s violated corpse is found in a town park. Eyewitnesses and fingerprints point
+            unmistakably to one of Flint City’s most popular citizens. He is Terry Maitland, Little League coach, English
+            teacher, husband, and father of two girls. Detective Ralph Anderson, whose son Maitland once coached, orders
+            a quick and very public arrest. Maitland has an alibi, but Anderson and the district attorney soon add DNA
+            evidence to go with the fingerprints and witnesses. Their case seems ironclad.
+        </sinopsis>
+        <portada>http://covers.openlibrary.org/b/isbn/1501180983-M.jpg</portada>
+        <comentarios>
+            <comentario>
+                <usuario>May</usuario>
+                <contenido>Stephen King amazes me. Here, he has managed to turn a 300-page story into a 560-page story
+                    by leading us on a long-winded wild goose chase while waffling on about almost everything, but somehow,
+                    though it seems hard to fathom, I could not put this cracktastic shit down.</contenido>
+                <fecha>Jun 8, 2018</fecha>
+            </comentario>
+            <comentario>
+                <usuario>Becky</usuario>
+                <contenido>SIGH... Many people are going to love this book. Probably most of them will love it for all
+                    (or at least some) of the reasons that I did not. And that's OK. If you want to read reviews praising
+                    this book there are already many of them out there you may enjoy.</contenido>
+                <fecha>Jun 22, 2018</fecha>
+            </comentario>
+            <comentario>
+                <usuario>Relluw</usuario>
+                <contenido>This started off really good but it slowed down towards the end. I was happy there was some
+                    connection to the Bill Hodges series (which I liked a lot and recommend you read first since there
+                    are some spoilers here!) but I was overall underwhelmed.</contenido>
+                <fecha>Jun 21, 2018</fecha>
+            </comentario>
+        </comentarios>
+    </libro>
+    <!--- +++++++++++++++++++++++++++++++ -->
+    <libro>
+        <titulo>The Woman in the Window</titulo>
+        <autores>
+            <autor>
+                <nombre>A.J.</nombre>
+                <apellidos>Finn</apellidos>
+                <nacionalidad>American</nacionalidad>
+            </autor>
+        </autores>
+        <año>2018</año>
+        <editorial>William Morrow</editorial>
+        <ediciones>
+            <edicion>
+                <numero>3rd</numero>
+                <formato>Paperback</formato>
+                <editorial>HarpexLuxe</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>593</paginas>
+                        <isbn>
+                            <isbn10>0062791451</isbn10>
+                            <isbn13>9780062791450</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+            <edicion>
+                <numero>1st</numero>
+                <formato>Audio Book</formato>
+                <editorial>Harper Collins</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>14</paginas>
+                        <isbn>
+                            <isbn10>0062678434</isbn10>
+                            <isbn13>9780062678430</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+            <edicion>
+                <numero>2nd</numero>
+                <formato>Hardcover</formato>
+                <editorial>William Morrow</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>429</paginas>
+                        <isbn>
+                            <isbn10>0062678418</isbn10>
+                            <isbn13>9780062678416</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+        </ediciones>
+        <puntuacion>3.94</puntuacion>
+        <sinopsis>Anna Fox lives alone—a recluse in her New York City home, unable to venture outside. She spends her
+            day drinking wine (maybe too much), watching old movies, recalling happier times . . . and spying on her
+            neighbors.
+        </sinopsis>
+        <portada>http://covers.openlibrary.org/b/isbn/0062678418-M.jpg</portada>
+        <comentarios>
+            <comentario>
+                <usuario>May</usuario>
+                <contenido>Stephen King amazes me. Here, he has managed to turn a 300-page story into a 560-page story
+                    by leading us on a long-winded wild goose chase while waffling on about almost everything, but somehow,
+                    though it seems hard to fathom, I could not put this cracktastic shit down.</contenido>
+                <fecha>Jun 8, 2018</fecha>
+            </comentario>
+            <comentario>
+                <usuario>May</usuario>
+                <contenido>Okay, I really don't want to misrepresent this book: The Woman in the Window is a pulpy,
+                    fast-paced popcorn thriller. It's not mindblowing or groundbreaking, but it is pageturning goodness.
+                    And it was exactly what I needed to get lost in right now.</contenido>
+                <fecha>Jun 01, 2018</fecha>
+            </comentario>
+            <comentario>
+                <usuario>Pierce</usuario>
+                <contenido>I'm surprised that I actually finished this novel because my patience was gone, girl.</contenido>
+                <fecha>Apr 04, 2018</fecha>
+            </comentario>
+            <comentario>
+                <usuario>Walters</usuario>
+                <contenido>This is a solid 4 Stars for me. It’s been awhile since I’ve read a psychological suspense
+                    thriller —-a surprise gift in the mail. My copy says a film is already in the making. I can definitely
+                    see this novel as a movie. It should be good! The book is good.</contenido>
+                <fecha>Dec 11, 2019</fecha>
+            </comentario>
+        </comentarios>
+    </libro>
+    <!--- +++++++++++++++++++++++++++++++ -->
+    <libro>
+        <titulo>The Woman in the Window</titulo>
+        <autores>
+            <autor>
+                <nombre>A.J.</nombre>
+                <apellidos>Finn</apellidos>
+                <nacionalidad>American</nacionalidad>
+            </autor>
+        </autores>
+        <año>2018</año>
+        <editorial>William Morrow</editorial>
+        <ediciones>
+            <edicion>
+                <numero>3rd</numero>
+                <formato>Paperback</formato>
+                <editorial>HarpexLuxe</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>593</paginas>
+                        <isbn>
+                            <isbn10>0062791451</isbn10>
+                            <isbn13>9780062791450</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+            <edicion>
+                <numero>1st</numero>
+                <formato>Audio Book</formato>
+                <editorial>Harper Collins</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>14</paginas>
+                        <isbn>
+                            <isbn10>0062678434</isbn10>
+                            <isbn13>9780062678430</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+            <edicion>
+                <numero>2nd</numero>
+                <formato>Hardcover</formato>
+                <editorial>William Morrow</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>429</paginas>
+                        <isbn>
+                            <isbn10>0062678418</isbn10>
+                            <isbn13>9780062678416</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+        </ediciones>
+        <puntuacion>3.94</puntuacion>
+        <sinopsis>Anna Fox lives alone—a recluse in her New York City home, unable to venture outside. She spends her
+            day drinking wine (maybe too much), watching old movies, recalling happier times . . . and spying on her
+            neighbors.
+        </sinopsis>
+        <portada>http://covers.openlibrary.org/b/isbn/0062678418-M.jpg</portada>
+        <comentarios>
+            <comentario>
+                <usuario>Uiamtse</usuario>
+                <contenido>Here, he has managed to turn a 300-page story into a 560-page story
+                    by leading us on a long-winded wild goose chase while waffling on about almost everything, but somehow,
+                    though it seems hard to fathom, I could not put this cracktastic shit down.</contenido>
+                <fecha>Jun 8, 2018</fecha>
+            </comentario>
+            <comentario>
+                <usuario>May</usuario>
+                <contenido>Okay, I really don't want to misrepresent this book: The Woman in the Window is a pulpy,
+                    fast-paced popcorn thriller. It's not mindblowing or groundbreaking, but it is pageturning goodness.
+                    And it was exactly what I needed to get lost in right now.</contenido>
+                <fecha>Jun 01, 2018</fecha>
+            </comentario>
+            <comentario>
+                <usuario>Pierce</usuario>
+                <contenido>I'm surprised that I actually finished this novel because my patience was gone, girl.</contenido>
+                <fecha>Apr 04, 2018</fecha>
+            </comentario>
+            <comentario>
+                <usuario>Walters</usuario>
+                <contenido>This is a solid 4 Stars for me. It’s been awhile since I’ve read a psychological suspense
+                    thriller —-a surprise gift in the mail. My copy says a film is already in the making. I can definitely
+                    see this novel as a movie. It should be good! The book is good.</contenido>
+                <fecha>Dec 11, 2019</fecha>
+            </comentario>
+        </comentarios>
+    </libro>
+    <!--- +++++++++++++++++++++++++++++++ -->
+    <libro>
+        <titulo>Circe</titulo>
+        <autores>
+            <autor>
+                <nombre>Madeline</nombre>
+                <apellidos>Miller</apellidos>
+                <nacionalidad>American</nacionalidad>
+            </autor>
+        </autores>
+        <año>2017</año>
+        <editorial>Bloomsbury</editorial>
+        <ediciones>
+            <edicion>
+                <numero>1st</numero>
+                <formato>Paperback</formato>
+                <editorial>Bloomsbury</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>333</paginas>
+                        <isbn>
+                            <isbn10>9871408890073</isbn10>
+                            <isbn13>9871408890073</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+            <edicion>
+                <numero>1st</numero>
+                <formato>Kindle</formato>
+                <editorial>Little, Brown and Company</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>400</paginas>
+                        <isbn>
+                            <isbn10>B074M5TLLJ</isbn10>
+                            <isbn13>B074M5TLLJ</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+            <edicion>
+                <numero>1st</numero>
+                <formato>Hardcover</formato>
+                <editorial>Little, Brown and Company</editorial>
+                <idiomas>
+                    <idioma>
+                        <id>English</id>
+                        <paginas>393</paginas>
+                        <isbn>
+                            <isbn10>0316556343</isbn10>
+                            <isbn13>9780316556347</isbn13>
+                        </isbn>
+                    </idioma>
+                </idiomas>
+            </edicion>
+        </ediciones>
+        <puntuacion>4.31</puntuacion>
+        <sinopsis>In the house of Helios, god of the sun and mightiest of the Titans, a daughter is born. But Circe is
+            a strange child—not powerful, like her father, nor viciously alluring like her mother. Turning to the world
+            of mortals for companionship, she discovers that she does possess power—the power of witchcraft, which can
+            transform rivals into monsters and menace the gods themselves.
+        </sinopsis>
+        <portada>http://covers.openlibrary.org/b/isbn/0316556343-M.jpg</portada>
+        <comentarios>
+            <comentario>
+                <usuario>May</usuario>
+                <contenido>I absolutely loved this. If you enjoy Greek mythology, complex heroines, and a generous
+                    serving of adventure, bloodshed, betrayal, magic, and monsters - both literal and figurative - then
+                    hell, READ THIS BOOK.</contenido>
+                <fecha>Jan 10, 2018</fecha>
+            </comentario>
+            <comentario>
+                <usuario>Elise</usuario>
+                <contenido>My words are not as good as the ones in this book. Circe is a book about... finding yourself.
+                    But god, it stands out so far from just that. </contenido>
+                <fecha>Mar 27, 2017</fecha>
+            </comentario>
+            <comentario>
+                <usuario>Hannah</usuario>
+                <contenido>Absolutely beautiful!</contenido>
+                <fecha>Dec 14, 2018</fecha>
+            </comentario>
+            <comentario>
+                <usuario>BookDragon</usuario>
+                <contenido>This is a beautiful book; it is flawless and intelligent. I do not have a single criticism
+                    for this fantastic piece of writing. I loved it!</contenido>
+                <fecha>Mar 21, 2018</fecha>
+            </comentario>
+        </comentarios>
+    </libro>
+    <!--- +++++++++++++++++++++++++++++++ -->
+</libros>
+
+

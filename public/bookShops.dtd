@@ -1,0 +1,29 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT shops (shop)+>
+
+<!ELEMENT shop (name,address,coordinates,description,phone,url,
+        pictures)>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT address (#PCDATA)>
+
+<!ELEMENT coordinates (latitude,longitude)>
+
+<!ELEMENT description (#PCDATA)>
+
+<!ELEMENT phone (#PCDATA)>
+
+<!ELEMENT url (#PCDATA)>
+
+<!ELEMENT pictures (picture)+>
+
+<!ELEMENT latitude (#PCDATA)>
+
+<!ELEMENT longitude (#PCDATA)>
+
+<!ELEMENT picture EMPTY>
+<!ATTLIST picture
+        xmlns CDATA #FIXED ''
+        source CDATA #IMPLIED>

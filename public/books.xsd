@@ -1,0 +1,96 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="libros">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="libro" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="titulo"/>
+              <xs:element name="autores">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="autor" maxOccurs="unbounded" minOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="nombre"/>
+                          <xs:element type="xs:string" name="apellidos"/>
+                          <xs:element type="xs:string" name="nacionalidad"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:short" name="año"/>
+              <xs:element type="xs:string" name="editorial"/>
+              <xs:element name="ediciones">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="edicion" maxOccurs="unbounded" minOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="numero"/>
+                          <xs:element type="TFormato" name="formato"/>
+                          <xs:element type="xs:string" name="editorial"/>
+                          <xs:element name="idiomas">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="idioma" maxOccurs="unbounded" minOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="id"/>
+                                      <xs:element type="xs:integer" name="paginas"/>
+                                      <xs:element name="isbn">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="isbn10"/>
+                                            <xs:element type="xs:string" name="isbn13"/>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:float" name="puntuacion"/>
+              <xs:element type="xs:string" name="sinopsis"/>
+              <xs:element type="xs:anyURI" name="portada"/>
+              <xs:element name="comentarios">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="comentario" maxOccurs="unbounded" minOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="usuario"/>
+                          <xs:element type="xs:string" name="contenido"/>
+                          <xs:element type="xs:string" name="fecha"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:simpleType name="TFormato">
+	<xs:restriction base="xs:string">
+      <xs:enumeration value="Kindle"/>
+      <xs:enumeration value="Paperback"/>
+      <xs:enumeration value="Hardcover"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+</xs:schema>

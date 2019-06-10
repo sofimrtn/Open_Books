@@ -1,0 +1,60 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT libros (libro)+>
+
+<!ELEMENT libro (titulo,autores,año,editorial,ediciones,puntuacion,
+                 sinopsis,portada,comentarios)>
+
+<!ELEMENT titulo (#PCDATA)>
+
+<!ELEMENT autores (autor)+>
+
+<!ELEMENT año (#PCDATA)>
+
+<!ELEMENT ediciones (edicion)+>
+
+<!ELEMENT puntuacion (#PCDATA)>
+
+<!ELEMENT sinopsis (#PCDATA)>
+
+<!ELEMENT portada (#PCDATA)>
+
+<!ELEMENT comentarios (comentario)+>
+
+<!ELEMENT autor (nombre,apellidos,nacionalidad)>
+
+<!ELEMENT edicion (numero,formato,editorial,idiomas)>
+
+<!ELEMENT comentario (usuario,contenido,fecha)>
+
+<!ELEMENT nombre (#PCDATA)>
+
+<!ELEMENT apellidos (#PCDATA)>
+
+<!ELEMENT nacionalidad (#PCDATA)>
+
+<!ELEMENT numero (#PCDATA)>
+
+<!ELEMENT formato (#PCDATA)>
+
+<!ELEMENT idiomas (idioma)+>
+
+<!ELEMENT usuario (#PCDATA)>
+
+<!ELEMENT contenido (#PCDATA)>
+
+<!ELEMENT fecha (#PCDATA)>
+
+<!ELEMENT idioma (id,paginas,isbn)>
+
+<!ELEMENT id (#PCDATA)>
+
+<!ELEMENT paginas (#PCDATA)>
+
+<!ELEMENT isbn (isbn10,isbn13)>
+
+<!ELEMENT isbn10 (#PCDATA)>
+
+<!ELEMENT isbn13 (#PCDATA)>
+
+<!ELEMENT editorial (#PCDATA)>
