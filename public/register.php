@@ -5,6 +5,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 
 try {
+    $driver = mysqli_init();
     $connection = mysqli_real_connect($driver, 'openbooksserver.mysql.database.azure.com', 'smartin@openbooksserver', 'RESTALLON123#', 'library_sew', 3306);
      $statement = $connection->prepare('INSERT INTO user (email, password, name) VALUES (?, SHA1(?), ?);');
      $statement->bind_param('sss', $email, $password, $name);
