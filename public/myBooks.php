@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 if (isset($_SESSION['current_user'])) {
     $email = $_SESSION['current_user']['email'];
 
