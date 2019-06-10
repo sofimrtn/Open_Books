@@ -5,9 +5,9 @@ if (isset($_SESSION['current_user'])) {
 
     try {
         $driver = mysqli_init();
-            $driver->report_mode = MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT;
+        $driver->report_mode = MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT;
 
-            $connection = mysqli_real_connect($driver, 'openbooksserver.mysql.database.azure.com', 'smartin@openbooksserver', 'RESTALLON123#', 'library_sew', 3306);
+         $connection = new mysqli_real_connect($driver, 'openbooksserver.mysql.database.azure.com', 'smartin@openbooksserver', 'RESTALLON123#', 'library_sew', 3306);
 
          $statement = $connection->prepare('SELECT ISBN, Title, user, portada FROM book WHERE user = ?');
          $statement->bind_param('s', $email);
