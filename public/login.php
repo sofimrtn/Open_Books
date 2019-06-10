@@ -7,7 +7,7 @@ try {
     $driver = mysqli_init();
     $driver->report_mode = MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT;
 
-    $connection = mysqli_real_connect($driver, 'openbooksdb.mysql.database.azure.com', 'smartin@openbooksdb', 'RESTALLON123#', 'library_sew', 3306);
+    $connection = mysqli_real_connect($driver, 'openbooksdb.mysql.database.azure.com', 'smartin@openbooksdb', 'RESTALLON123#', 3306);
 
      $result = $connection->select_db('library_sew');
      $statement = $connection->prepare('SELECT email, name FROM user WHERE email = ? AND password = SHA1(?)');
