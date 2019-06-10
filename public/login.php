@@ -9,11 +9,10 @@ try {
 
     $connection = mysqli_real_connect($driver, 'openbooksserver.mysql.database.azure.com', 'smartin@openbooksserver', 'RESTALLON123#', 'library_sew', 3306);
 
-     $result = $connection->select_db('library_sew');
-     $statement = $connection->prepare('SELECT email, name FROM user WHERE email = ? AND password = SHA1(?)');
+     $statement = $connection->('SELECT email, name FROM user WHERE email = ? AND password = SHA1(?)');
      $statement->bind_param('ss', $email, $password);
      $statement->bind_result($email, $name);
-     $result = $statement->execute();
+     $statement->execute();
      if ($statement->fetch()) {
          $_SESSION['current_user'] = [
              'email' => $email,
