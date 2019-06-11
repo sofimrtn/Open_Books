@@ -18,20 +18,21 @@ if (isset($_SESSION['current_user'])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>My Books</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="myBooks_ratings.js"></script>
     <link rel="stylesheet" type="text/css" href="../myBooks_flex.css" />
 </head>
 <body>
 <div class="sidebar">
-  <a href="myBooks.php">Home</a>
+  <a class="active" href="myBooks.php">Home</a>
   <a href="../booksAll.html">All Books</a>
   <a href="../authors.html">Authors</a>
   <a href="../clasics.html">Clasics</a>
   <a href="../bestSellings.html">Best Sellings</a>
   <a href="../series.html">Series</a>
   <a href="../events.html">Events</a>
+  <a href="../shops.html">Shops</a>
   <a href="../guide.html">Guide</a>
 </div>
 <h1>My Books</h1>

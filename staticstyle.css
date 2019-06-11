@@ -81,7 +81,7 @@ section {
 
 /* Active/current link */
 .sidebar a.active {
-    background-color: #4CAF50;
+    background-color: #228B22;
     color: white;
 }
 
