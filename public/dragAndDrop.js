@@ -11,7 +11,7 @@ class OperationDragAndDrop {
         alert('Book succesfully added to your library');
     }
 
-    allowDrop(e) {
+    static allowDrop(e) {
         e.preventDefault();
     }
 
