@@ -132,7 +132,6 @@
         <pictures>
             <picture source="static/img/hangar.jpg"/>
             <picture source="static/img/hangar2.jpg"/>
-            <picture source="static/img/hangar3.jpg"/>
         </pictures>
     </shop>
 </shops>
