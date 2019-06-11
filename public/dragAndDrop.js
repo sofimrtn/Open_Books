@@ -16,4 +16,4 @@ class OperationDragAndDrop {
     }
 }
 
-let operationDragAndDropCurrent = null;
+let operationDragAndDropCurrent;
