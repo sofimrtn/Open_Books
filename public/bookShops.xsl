@@ -32,14 +32,29 @@
                 </p>
 
                 <p>
-                    <span class="bold">Coordinates: </span>
+                    <span class="bold">
+                        <xsl:attribute name="data-lon">
+                            <xsl:value-of select="coordinates/longitude"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="data-lat">
+                            <xsl:value-of select="coordinates/latitude"/>
+                        </xsl:attribute>
+                        Coordinates:
+                    </span>
+                    <button>
+                        <xsl:attribute name="onfocus">#map</xsl:attribute>
+                        <xsl:attribute name="onclick">showOnMap(43.3641037,-5.8498177)</xsl:attribute>
+                        <a id="top" href="#out">
+                        Locate
+                        </a>
+                    </button>
                 </p>
                 <ul>
                     <li>
-                    <span><xsl:value-of select="coordinates/longitude"/></span>
+                        <span><xsl:value-of select="coordinates/longitude"/></span>
                     </li>
                     <li>
-                    <span><xsl:value-of select="coordinates/latitude"/></span>
+                        <span><xsl:value-of select="coordinates/latitude"/></span>
                     </li>
                 </ul>
                 <p>

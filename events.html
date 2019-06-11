@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Events</title>
@@ -11,6 +11,7 @@
     <script>
         var latitude;
         var lon;
+        var mapa;
 
         function initMap() {
 
@@ -31,15 +32,22 @@
                     center:new google.maps.LatLng(latitude,lon),
                     zoom:13,
                 };
-                var mapa = new google.maps.Map(document.getElementById("map"),map);
+                mapa = new google.maps.Map(document.getElementById("map"),map);
 
                 var geocoder = new google.maps.Geocoder();
                 var infowindow = new google.maps.InfoWindow;
+
+                var pinColor = "0095FF";
+                var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor,
+                    new google.maps.Size(21, 34),
+                    new google.maps.Point(0,0),
+                    new google.maps.Point(10, 34));
 
                 geocoder.geocode({'location': new google.maps.LatLng(latitude,lon)}, function(results, status) {
                     if (status === 'OK') {
                         mapa.setCenter(new google.maps.LatLng(latitude,lon));
                         var marker = new google.maps.Marker({
+                            icon: pinImage,
                             map: mapa,
                             position: new google.maps.LatLng(latitude,lon)
                         });
@@ -47,7 +55,6 @@
                             infowindow.open(map, marker);
                         });
                         infowindow.setContent(results[0].formatted_address);
-                        infowindow.open(map, marker);
                         output.innerHTML += '<p>' + results[0].formatted_address +'</p>';
                     } else {
                         alert('Geocode was not successful for the following reason: ' + status);
@@ -70,6 +77,30 @@
             $("#load").load("public/loadXML.php");
         }
 
+        function showOnMap(lat, longitude){
+            latitude = lat;
+            lon = longitude;
+            var geocoder = new google.maps.Geocoder();
+            var infowindow = new google.maps.InfoWindow;
+
+            geocoder.geocode({'location': new google.maps.LatLng(latitude,lon)}, function(results, status) {
+                if (status === 'OK') {
+                    mapa.setCenter(new google.maps.LatLng(latitude,lon));
+                    mapa.setZoom(8);
+                    var marker = new google.maps.Marker({
+                        map: mapa,
+                        position: new google.maps.LatLng(latitude,lon)
+                    });
+                    marker.addListener('click', function() {
+                        infowindow.open(map, marker);
+                    });
+                    infowindow.setContent(results[0].formatted_address);
+                    infowindow.open(map, marker);
+                } else {
+                    alert('Geocode was not successful for the following reason: ' + status);
+                }
+            });
+        }
     </script>
 </head>
 <body>
