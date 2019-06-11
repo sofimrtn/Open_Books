@@ -7,9 +7,9 @@ if (isset($_SESSION['current_user'])) {
         $driver = mysqli_init();
         $driver->report_mode = MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT;
 
-         $connection = new mysqli_real_connect($driver, 'openbooksserver.mysql.database.azure.com', 'smartin@openbooksserver', 'RESTALLON123#', 'library_sew', 3306);
+         mysqli_real_connect($driver, 'openbooksserver.mysql.database.azure.com', 'smartin@openbooksserver', 'RESTALLON123#', 'library_sew', 3306);
 
-         $statement = $connection->prepare('SELECT ISBN, Title, user, portada FROM book WHERE user = ?');
+         $statement = $driver->prepare('SELECT ISBN, Title, user, portada FROM book WHERE user = ?');
          $statement->bind_param('s', $email);
          $statement->bind_result($isbn, $title, $user, $portada);
          $statement->execute();
@@ -21,7 +21,7 @@ if (isset($_SESSION['current_user'])) {
     <title>Title</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="myBooks_ratings.js"></script>
-    <link rel="stylesheet" type="text/css" href="myBooks_flex.css" />
+    <link rel="stylesheet" type="text/css" href="../myBooks_flex.css" />
 </head>
 <body>
 <div class="sidebar">
@@ -72,7 +72,7 @@ if (isset($_SESSION['current_user'])) {
     } catch (Exception $e) {
         header('location: error.php?message=' . urlencode($e->getMessage()));
     } finally {
-        $connection->close();
+        $driver->close();
     }
 }
 else {
