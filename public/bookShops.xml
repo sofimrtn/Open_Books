@@ -48,8 +48,8 @@
         <phone>985 20 77 61</phone>
         <url>https://www.cervantes.com/</url>
         <pictures>
-            <picture source="static/img/Cervantes-entrada.png"/>
-            <picture source=" "/>
+            <picture source="static/img/libreria-cervantes.jpg"/>
+            <picture source="static/img/libreriaCervantes.jpg"/>
         </pictures>
     </shop>
     <!--###########-->
@@ -65,7 +65,7 @@
         <phone>985 17 00 80</phone>
         <url>https://libroscentral.com/</url>
         <pictures>
-            <picture source=" "/>
+            <picture source="static/img/lib-central.jpg"/>
         </pictures>
     </shop>
     <!--###########-->
@@ -81,9 +81,9 @@
         <phone>985 35 97 78</phone>
         <url>https://www.librerianauticasanesteban.com/</url>
         <pictures>
-            <picture source=" "/>
-            <picture source=" "/>
-            <picture source=" "/>
+            <picture source="static/img/lib-nautica.jpg"/>
+            <picture source="static/img/lib-nautica2.jpg"/>
+            <picture source="static/img/lib-nautica3.jpg"/>
         </pictures>
     </shop>
     <!--###########-->
@@ -98,7 +98,7 @@
         <phone>985 56 39 93</phone>
         <url>http://www.libreriaclarin.es/clarin_css/index.php</url>
         <pictures>
-            <picture></picture>
+            <picture source="static/img/clarin.jpg"/>
         </pictures>
     </shop>
     <!--###########-->
@@ -113,8 +113,8 @@
         <phone> 985 67 44 25</phone>
         <url>https://libreriascampoamor.com/</url>
         <pictures>
-            <picture source=" "/>
-            <picture source=" "/>
+            <picture source="static/img/campoamor.jpg"/>
+            <picture source="static/img/campoamor2.jpg"/>
         </pictures>
     </shop>
     <!--###########-->
@@ -130,9 +130,9 @@
         <phone>984 28 22 45</phone>
         <url>https://www.facebook.com/hangarrebelde</url>
         <pictures>
-            <picture source=" "/>
-            <picture source=" "/>
-            <picture source=" "/>
+            <picture source="static/img/hangar.jpg"/>
+            <picture source="static/img/hangar2.jpg"/>
+            <picture source="static/img/hangar3.jpg"/>
         </pictures>
     </shop>
 </shops>
