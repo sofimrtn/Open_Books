@@ -19,6 +19,7 @@ if (isset($_SESSION['current_user'])) {
 <head>
     <meta charset="UTF-8">
     <title>My Books</title>
+    <link rel="shortcut icon" href="../static/img/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="myBooks_ratings.js"></script>
     <link rel="stylesheet" type="text/css" href="../myBooks_flex.css" />
