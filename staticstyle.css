@@ -1,3 +1,6 @@
+/* Buscar por archivo html para búsquedas específicas*/
+
+/* TABLE BESTSELLINGS.HTML */
 table {
     font-family: "Roboto Light",sans-serif;
     margin: 0 auto;
@@ -17,19 +20,21 @@ th {
     background-color: darkslategray;
     color: white;
 }
-
+/* PICTURES */
 img {
     border: 2px solid #ddd;
     padding: 10px;
     margin: 0 auto;
     display: block;
 }
+/* CLASSIC COVERS CLASSICS.HTML*/
 #classic1,#classic2,#classic3,#classic4,#classic5,#classic6,#classic7,#classic8,#classic9, #classic10 {
     margin-right: 10px;
     margin-bottom: 15px;
     border-radius: 3em;
     float: left;
 }
+/* AUTHOR PICTURES AUTHORS.HTML*/
 #author1,#author2, #author3, #author4, #author5, #author6, #author7, #author8, #author9, #author10 {
     width: 30%;
     height: 30%;
@@ -108,7 +113,7 @@ section {
         float: none;
     }
 }
-
+/* HEART PIC FOR DRAG&DROP BOOKSALL.HTML*/
 #heart{
     height: 8em;
     width: 8em;
@@ -116,7 +121,7 @@ section {
     float: left;
     border: none;
 }
-
+/* BOX FOR EACH BOOk BOOKSALL.HTML*/
 article.book{
     border: 2px solid gainsboro;
     padding: 10px;
@@ -124,6 +129,7 @@ article.book{
     margin-top: 1em;
 }
 
+/* BUTTON SHOW ALL BOOKS, SHOW SHOPS. LOAD XML. SHOPS.HTML BOOKSALL.HTML */
 .button {
     display: inline-block;
     border-radius: 4px;
@@ -164,6 +170,7 @@ article.book{
     right: 0;
 }
 
+/* MAP SHOPS.HTML */
 #map {
     height: 270px;
     width: 70%;
@@ -174,7 +181,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
-
+/* BOTONES INDEX.HTML ---- SIGN IN AND SIGN UP */
 #boton{
     border: 2px solid #228B22;
     padding: 28px 50px;
@@ -192,7 +199,7 @@ html, body {
     background-color: #228B22;
     color: white;
 }
-
+/* CAJA BOTONES INDEX.HTML ---- SIGN IN AND SIGN UP*/
 article.botones{
     margin: 0 auto;
     border: 5px solid dimgrey;
@@ -203,14 +210,22 @@ article.botones{
     margin-top: 2em;
     border-radius: 1em;
 }
-
+/* ENLACE LOCATE SHOPS.HTML*/
 #top{
     text-decoration: none;
     color: black;
 }
-
+/* NEGRITA NOMBRES XML SHOPS.HTML*/
 .bold{
     font-weight: bold;
+}
+/* TITULOS GUIDE ESTILO BANNER */
+.banner{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: darkseagreen;
 }
 
 

@@ -1,3 +1,5 @@
+/* Hoja de estilo para LOGIN.HTML y REGISTER.HTML*/
+
 form {
     border: 3px solid #f1f1f1;
     font-family: "Roboto Light",sans-serif;
@@ -45,7 +47,7 @@ a {
 }
 
 
-table {
+/*table {
     font-family: "Roboto Light",sans-serif;
     margin: 0 auto;
 }
@@ -63,7 +65,7 @@ th {
     font-family: Roboto,sans-serif;
     background-color: #228B22;
     color: white;
-}
+}*/
 
 
 
