@@ -182,7 +182,7 @@ html, body {
     padding: 0;
 }
 /* BOTONES INDEX.HTML ---- SIGN IN AND SIGN UP */
-#boton{
+.boton{
     border: 2px solid #228B22;
     padding: 28px 50px;
     color: black;
@@ -195,7 +195,7 @@ html, body {
     border-radius: 1em;
 }
 
-#boton:hover{
+.boton:hover{
     background-color: #228B22;
     color: white;
 }
