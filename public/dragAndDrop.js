@@ -11,10 +11,13 @@ class OperationDragAndDrop {
         alert('Book succesfully added to your library');
     }
 
-    static allowDrop(e) {
+    allowDrop(e) {
         e.preventDefault();
     }
 
+    static allowDrop(e) {
+        e.preventDefault();
+    }
 }
 
-var operationDragAndDropCurrent = null;
+let operationDragAndDropCurrent = null;
