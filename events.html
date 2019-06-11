@@ -7,6 +7,7 @@
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx5elwS0TL6JHuqgqxdcgTt2BRC-WsXTE&callback=initMap">
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
         var latitude;
         var lon;
@@ -54,15 +55,19 @@
                 });
 
 
-            };
+            }
 
             function error() {
                 output.innerHTML = "Unable to retrieve your location";
-            };
+            }
 
             output.innerHTML = "<p>Locating…</p>";
 
             navigator.geolocation.getCurrentPosition(success, error);
+        }
+
+        function loadXML(){
+            $("#load").load("public/loadXML.php");
         }
 
     </script>
@@ -83,6 +88,9 @@
     <h1>Location & Events</h1>
     <section id="out"><h6>Coordinates</h6></section>
     <section id="map"><h6>Location</h6></section>
+
+    <button  class="button" onclick = "loadXML()"><span>Show Shops</span></button>
+    <div id="load"></div>
 </article>
 
 </body>
