@@ -26,14 +26,14 @@ if (isset($_SESSION['current_user'])) {
 <body>
 <div class="sidebar">
   <a href="myBooks.php">Home</a>
-  <a href="booksAll.html">All Books</a>
-  <a href="static/authors.html">Authors</a>
-  <a href="static/clasics.html">Clasics</a>
-  <a href="static/bestSellings.html">Best Sellings</a>
-  <a href="static/series.html">Series</a>
-  <a href="static/events.html">Events</a>
-  <a href="static/guide.html">Guide</a>
-  <a href="static/index.html">Index</a>
+  <a href="../booksAll.html">All Books</a>
+  <a href="../authors.html">Authors</a>
+  <a href="../clasics.html">Clasics</a>
+  <a href="../bestSellings.html">Best Sellings</a>
+  <a href="../series.html">Series</a>
+  <a href="../events.html">Events</a>
+  <a href="../guide.html">Guide</a>
+  <a href="../index.html">Index</a>
 </div>
 <h1>My Books</h1>
 <p id="info">Click a book for more info </p>
