@@ -7,7 +7,7 @@ class OperationDragAndDrop {
     drop(e) {
         var copy = this.toMoveNode.cloneNode(true);
         e.target.appendChild(copy);
-        alert('Success');
+        alert('Book successfully added to your library');
     }
 
     allowDrop(e) {
