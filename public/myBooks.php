@@ -77,7 +77,7 @@ if (isset($_SESSION['current_user'])) {
     }
 }
 else {
-    header('location: error.php?message=' . urlencode('El usuario no esta logueado'));
+    header('location:login.php');
 }
 ?>
 
