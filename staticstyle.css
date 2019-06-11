@@ -117,7 +117,7 @@ section {
     border: none;
 }
 
-section.book{
+article.book{
     border: 2px solid gainsboro;
     padding: 10px;
     margin-bottom: 2em;
