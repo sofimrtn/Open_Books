@@ -242,5 +242,11 @@ article.botones{
     text-decoration: none;
 }
 
+.logout{
+    position: absolute;
+    left:    0;
+    bottom:   0;
+}
+
 
 

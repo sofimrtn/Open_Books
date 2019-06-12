@@ -35,6 +35,7 @@ if (isset($_SESSION['current_user'])) {
   <a href="../events.html">Events</a>
   <a href="../shops.html">Shops</a>
   <a href="../guide.html">Guide</a>
+  <a class="logout" href="../index.html">Log out</a>
 </div>
 <h1>My Books</h1>
 <p id="info">Click a book for more info </p>

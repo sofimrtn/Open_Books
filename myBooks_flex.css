@@ -138,3 +138,9 @@ body {
     background-color: #4CAF50;
     font-weight: bold;
 }
+
+.logout{
+    position: absolute;
+    left:    0;
+    bottom:   2em;
+}
