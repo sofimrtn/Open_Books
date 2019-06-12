@@ -44,14 +44,14 @@ class FileXML {
                     rating = $('puntuacion',this).text();
                     description = $('sinopsis',this).text();
                     books +=
-                        '<article class="book" draggable="true">' +
-                            '<h2>' + title + '</h2>' +
+                        '<article class="book" draggable="true" data-title="'+ title +'" data-isbn="'+ isbn +'" data-cover="http://covers.openlibrary.org/b/isbn/'+ isbn +'-M.jpg">' +
+                        '<h2>' + title + '</h2>' +
                             authors +
-                            '<p>Publishers: ' + editorial + '</p>' +
+                            '<p>Publishers: ' +editorial + '</p>' +
                             '<p>Year published: ' + year + '</p>' +
                             '<p>Overall Rating: ' + rating + ' ⭐ </p>' +
                             '<p>Description: ' + description + '</p><i class="fas fa-heart"></i>' +
-                            '<p>ISBN: ' + isbn + '</p>' +
+                            '<p>ISBN: ' +isbn + '</p>' +
                         '</article>';
                 });
                 $("section").html(books);

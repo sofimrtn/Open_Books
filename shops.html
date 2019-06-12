@@ -78,19 +78,24 @@
             $("#load").load("public/loadXML.php");
         }
 
-        function showOnMap(lat, longitude){
-            latitude = lat;
-            lon = longitude;
+        var marker = undefined;
+
+        function showOnMap(latitude, longitude){
+
+            if (marker !== undefined) {
+                marker.setMap(null);
+            }
+
             var geocoder = new google.maps.Geocoder();
             var infowindow = new google.maps.InfoWindow;
 
-            geocoder.geocode({'location': new google.maps.LatLng(latitude,lon)}, function(results, status) {
+            geocoder.geocode({'location': new google.maps.LatLng(latitude,longitude)}, function(results, status) {
                 if (status === 'OK') {
-                    mapa.setCenter(new google.maps.LatLng(latitude,lon));
+                    mapa.setCenter(new google.maps.LatLng(latitude,longitude));
                     mapa.setZoom(8);
-                    var marker = new google.maps.Marker({
+                    marker = new google.maps.Marker({
                         map: mapa,
-                        position: new google.maps.LatLng(latitude,lon)
+                        position: new google.maps.LatLng(latitude,longitude)
                     });
                     marker.addListener('click', function() {
                         infowindow.open(map, marker);

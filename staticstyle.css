@@ -228,5 +228,19 @@ article.botones{
     background-color: darkseagreen;
 }
 
+.link-info{
+    color: black;
+    text-decoration: none;
+    border: 1px solid #228B22;
+    padding: 2px 6px 2px 6px;
+}
+.link-info:hover {
+    color: #228B22;
+    font-weight: bold;
+}
+.link-cerrar-popup:visited {
+    text-decoration: none;
+}
+
 
 

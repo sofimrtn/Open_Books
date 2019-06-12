@@ -28,7 +28,7 @@
         version of Good Reads so to say.</p>
         <p>It is divided in two main sections: blog entries and "My Library". Blog entries are pages containing general information
         on known books. "My Library" contains the list of all books available, your favorite ones and shops nearby.</p>
-        <p>Deployed using Microsoft Azure. Took me a while so appreciate it as much as you can, my self esteem needs it.</p>
+        <p>Deployed using Microsoft Azure.</p>
         <p>If you want to know how to use it, keep reading!</p>
     </section>
     <section>
@@ -38,10 +38,10 @@
                 <h3>Blog entries</h3>
                 <ul>
                     <li><a href="#authors">Authors</a></li>
-                    <li><a href="#sellers">Best Sellings</a></li>
                     <li><a href="#classics">Classics</a></li>
-                    <li><a href="#events">Events</a></li>
+                    <li><a href="#sellers">Best Sellings</a></li>
                     <li><a href="#series">Series</a></li>
+                    <li><a href="#events">Events</a></li>
                     <li><a href="#user">User Guide</a></li>
                 </ul>
             </li>
@@ -49,7 +49,7 @@
                 <h3>My Library</h3>
                 <ul>
                     <li><a href="#all">All Books</a></li>
-                    <li><a href="#books">My Books</a></li>
+                    <li><a href="#books">Home</a></li>
                     <li><a href="#shops">Shops</a></li>
                 </ul>
             </li>
@@ -60,21 +60,21 @@
         <h2>BLOG</h2>
         <h3 id="authors">Authors</h3>
         <p>List of the worldwide top 10 authors of all times. Includes pictures and a short biography on each author</p>
+        <h3 id="classics">Classics</h3>
+        <p>If classic literature is what you are into, don't miss this section of Open Books. A short list that includes a top
+            ten read for any book lover, with cover pictures and short summaries.</p>
         <h3 id="sellers">Best Sellings</h3>
         <p>The fifty 2019 best sellers are listed in this table. Here you can find information such as titles, authors,
         publishing dates, prices and also ISBN codings.</p>
-        <h3 id="classics">Classics</h3>
-        <p>If classic literature is what you are into, don't miss this section of Open Books. A short list that includes a top
-        ten read for any book lover, with cover pictures and short summaries.</p>
-        <h3 id="events">Events</h3>
-        <p>Do you spend all your free time reading but haven't ever attended a literary event? Well it is about time. Here
-        you can find 6 of the most famous literary events in Spain. This is my personal part of the blog, where I share
-        my experiences attending these famous events. It also includes dates!</p>
         <h3 id="series">Series</h3>
         <p>Not all good series are made for TV. Most of the best stories ever made for the big screen were firstly written
         down in paper. Here you can find the most popular series ever written that have made it to the big screens. How much
         money did this series make? What first impressions have they caused? How did they become so popular? You can have
         all your questions answered looking in this section.</p>
+        <h3 id="events">Events</h3>
+        <p>Do you spend all your free time reading but haven't ever attended a literary event? Here
+            you can find 6 of the most famous literary events in Spain. This is my personal part of the blog, where I share
+            my experiences attending these famous events. It also includes dates!</p>
         <h3 id="user">User Guide</h3>
         <p>Is it your first time using Open Books? If you have a very busy life and can't spend two simple minutes figuring
         out how it works, here you have some first class dummy explanations that will show you how easy this application is
@@ -86,28 +86,26 @@
         <h3 id="all">All Books</h3>
         <p>Here you can find the available books of the week. Normally the collection includes new releases or editions, new
         additions to the top lists, etc. To view them, just click the "Show All Books" button once. The info is loaded from
-        an XML file using AJAX and JQuery. You shouldn't have any problem while listing them. If so, my fault.
-        </p>
-        <p>Here comes the fun part: How do I add one of these books to My Books? When you add a book to you list of favorites
-        you will be able to get more info on it as well as buying links from other online sites.
-            To do this, simply click on the section which contains the info of the book (all of them are listed in separate
+        an XML file using AJAX and JQuery.</p>
+        <p>Once you add a book to you list of favorites you will be able to get more info on it as well as buying links from Open Library.
+            How do I add one of these books to My Books? Simply click on the section which contains the info of the book (all of them are listed in separate
             boxes), drag it to the Heart image shown at the bottom of the sidebar and drop it. The book you picked will be automatically
             added to your personal favorites and stored in our database, an alert will be shown.
         Functionality provided by the Drag&Drop HTML5 API.</p>
-        <h3 id="books">My Library</h3>
+        <h3 id="books">My Books</h3>
         <p>Your favorite books are stored here (the ones you dragged and dropped from the list of all books). Books are listed
-        showing their cover image. To get more info just click on one of them and a beautiful handmade dialog will appear with
+        showing their cover image. To get more info just click on one of them and a dialog will appear with
         all the information available from the book. If any info is not present, it will be shown as "not specified". </p>
-        <p>All info on the books is obtained using Open Library's API. And the cover images as well. It is an awesome page.
+        <p>All info on the books is obtained using Open Library's API. And the cover images as well.
         Check it <a href="https://openlibrary.org">here</a>.</p>
         <p>Data is processed using JQuery and display follows a flexbox style.</p>
         <h3 id="shops">Shops</h3>
         <p>Want to know where you stand at the moment? Use this section. It will accurately tell you what your position is,
-        even featuring coordinates (impressive I know), and it will show it on Google Maps (blue pin, if you click on it, it tells you the
+        ,even featuring coordinates, and it will show it on Google Maps (blue pin, if you click on it, it tells you the
             exact address).  </p>
-        <p>"Show Shops", as it says, will load a list of the most visited book stores in Asturias including information such
-        as website, phone number, description, pictures and once again coordinates. If you want to know where exactly is any
-        of these stores located, click locate and it will immediately appear on the above map (red pin), showing address.</p>
+        <p>"Show Shops" will load a list of the most visited book stores in Asturias including information such
+        as website, phone number, description, pictures and once again coordinates. If you want to know where is any
+        of these stores located exactly, click locate and it will immediately appear on the above map (red pin), showing address.</p>
         <p>Shop info is loaded as HTML from an XML file but this time it is processed using PHP (XSLT, transformation using
             XML and XSL files).  </p>
         <p>APIs used: HTML5 Geolocation (exact location of user), Google Maps (map), Geocoder (exact location of shop).</p>

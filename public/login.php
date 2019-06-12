@@ -5,7 +5,7 @@ $password = $_POST['password'];
 
 try {
     $driver = mysqli_init();
-    //$driver->report_mode = MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT;
+    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     mysqli_real_connect($driver,'openbooksserver.mysql.database.azure.com', 'smartin@openbooksserver', 'RESTALLON123#', 'library_sew', 3306);
 
      $statement = $driver->prepare('SELECT email, name FROM user WHERE email = ? AND password = SHA1(?)');

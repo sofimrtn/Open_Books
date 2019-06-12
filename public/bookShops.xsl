@@ -33,18 +33,18 @@
 
                 <p>
                     <span class="bold">
+                        Coordinates:
+                    </span>
+                    <button>
                         <xsl:attribute name="data-lon">
                             <xsl:value-of select="coordinates/longitude"/>
                         </xsl:attribute>
                         <xsl:attribute name="data-lat">
                             <xsl:value-of select="coordinates/latitude"/>
                         </xsl:attribute>
-                        Coordinates:
-                    </span>
-                    <button>
                         <xsl:attribute name="onfocus">#map</xsl:attribute>
-                        <xsl:attribute name="onclick">showOnMap(43.3641037,-5.8498177)</xsl:attribute>
-                        <a id="top" href="#out">
+                        <xsl:attribute name="onclick">showOnMap(this.getAttribute('data-lat'), this.getAttribute('data-lon'))</xsl:attribute>
+                        <a href="#out">
                         Locate
                         </a>
                     </button>
