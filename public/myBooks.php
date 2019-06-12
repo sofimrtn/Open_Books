@@ -37,6 +37,7 @@ if (isset($_SESSION['current_user'])) {
   <a href="../guide.html">Guide</a>
   <a class="logout" href="../index.html">Log out</a>
 </div>
+<article class="container">
 <h1>My Books</h1>
 <p id="info">Click a book for more info </p>
 <ul class="container">
@@ -67,6 +68,7 @@ if (isset($_SESSION['current_user'])) {
     $('a#link-cerrar-popup').click(function (e) { e.preventDefault(); $('#popup-info-libro').slideUp(); });
     $('a.link-libro').click(function(e){ e.preventDefault(); clienteServicio.obtenerRatings($(this).attr('data-isbn')); })
 </script>
+</article>
 </body>
 </html>
 <?php
