@@ -40,7 +40,7 @@ if (isset($_SESSION['current_user'])) {
 <article class="container">
 <h1>My Books</h1>
 <p id="info">Click a book for more info </p>
-<ul class="container">
+<ul class="lista">
 <?php
          while ($statement->fetch()) {
 ?>

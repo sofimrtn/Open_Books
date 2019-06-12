@@ -20,18 +20,20 @@ h1 {
 body {
     font-family: "Roboto Light", sans-serif;
 }
+.container{
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
 
-.container {
+.lista {
     display: flex; /* or inline-flex */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: flex-start;
-
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
 }
+
 .flex-item {
     background: white;
     padding: 10px;
