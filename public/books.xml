@@ -132,11 +132,11 @@
             <edicion>
                 <numero>1st</numero>
                 <formato>Kindle</formato>
-                <editorial></editorial>
+                <editorial>Brown Book Group</editorial>
                 <idiomas>
                     <idioma>
                         <id>English</id>
-                        <paginas></paginas>
+                        <paginas>569</paginas>
                         <isbn>
                             <isbn10>ASIN: B003GWX8GC</isbn10>
                             <isbn13>B003GWX8GC</isbn13>
@@ -220,7 +220,7 @@
             <autor>
                 <nombre>Thomas</nombre>
                 <apellidos>Koloniar</apellidos>
-                <nacionalidad></nacionalidad>
+                <nacionalidad>Rusia</nacionalidad>
             </autor>
         </autores>
         <año>2013</año>
