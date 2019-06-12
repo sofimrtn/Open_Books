@@ -27,8 +27,8 @@
             all best practices and standards (everything is valid according to W3C). It simulates an online bookstore or
             library, where you can like books and check any kind of information about them. Extra simple
         version of Good Reads so to say.</p>
-        <p>It is divided in two main sections: blog entries and "My Library". Blog entries are pages containing general information
-        on known books. "My Library" contains the list of all books available, your favorite ones and shops nearby.</p>
+        <p>It is divided in two main sections: blog entries and Library. Blog entries are pages containing general information
+        on known books. Library contains the list of all books available, your favorite ones and shops nearby.</p>
         <p>Deployed using Microsoft Azure.</p>
         <p>If you want to know how to use it, keep reading!</p>
     </section>
@@ -47,10 +47,10 @@
                 </ul>
             </li>
             <li>
-                <h3>My Library</h3>
+                <h3>Library</h3>
                 <ul>
-                    <li><a href="#all">All Books</a></li>
                     <li><a href="#books">Home</a></li>
+                    <li><a href="#all">All Books</a></li>
                     <li><a href="#shops">Shops</a></li>
                 </ul>
             </li>
@@ -58,7 +58,7 @@
     </section>
     <section>
         <h2 class="banner">What's on each page?</h2>
-        <h2>BLOG</h2>
+        <h2>BLOG ENTRIES</h2>
         <h3 id="authors">Authors</h3>
         <p>List of the worldwide top 10 authors of all times. Includes pictures and a short biography on each author</p>
         <h3 id="classics">Classics</h3>
@@ -77,13 +77,19 @@
             you can find 6 of the most famous literary events in Spain. This is my personal part of the blog, where I share
             my experiences attending these famous events. It also includes dates!</p>
         <h3 id="user">User Guide</h3>
-        <p>Is it your first time using Open Books? If you have a very busy life and can't spend two simple minutes figuring
-        out how it works, here you have some first class dummy explanations that will show you how easy this application is
+        <p>Is it your first time using Open Books? First class dummy explanations that will show you how easy this application is
         to use. If once you have read this you can't still figure out your way through the web, consider going for a walk
         and visit your local library. Might be easier. But takes more time. Think about it.</p>
         <br>
-        <h2>MY LIBRARY</h2>
+        <h2>LIBRARY</h2>
         <p>Most important part of the application</p>
+        <h3 id="books">Home</h3>
+        <p>Your favorite books are stored here (the ones you dragged and dropped from the list of all books). Books are listed
+            showing their cover image. To get more info just click on one of them and a dialog will appear with
+            all the information available from the book. If any info is not present, it will be shown as "not specified". </p>
+        <p>All info on the books is obtained using Open Library's API. And the cover images as well.
+            Check it <a href="https://openlibrary.org">here</a>.</p>
+        <p>Data is processed using JQuery and display follows a flexbox style.</p>
         <h3 id="all">All Books</h3>
         <p>Here you can find the available books of the week. Normally the collection includes new releases or editions, new
         additions to the top lists, etc. To view them, just click the "Show All Books" button once. The info is loaded from
@@ -93,13 +99,6 @@
             boxes), drag it to the Heart image shown at the bottom of the sidebar and drop it. The book you picked will be automatically
             added to your personal favorites and stored in our database, an alert will be shown.
         Functionality provided by the Drag&Drop HTML5 API.</p>
-        <h3 id="books">My Books</h3>
-        <p>Your favorite books are stored here (the ones you dragged and dropped from the list of all books). Books are listed
-        showing their cover image. To get more info just click on one of them and a dialog will appear with
-        all the information available from the book. If any info is not present, it will be shown as "not specified". </p>
-        <p>All info on the books is obtained using Open Library's API. And the cover images as well.
-        Check it <a href="https://openlibrary.org">here</a>.</p>
-        <p>Data is processed using JQuery and display follows a flexbox style.</p>
         <h3 id="shops">Shops</h3>
         <p>Want to know where you stand at the moment? Use this section. It will accurately tell you what your position is,
         ,even featuring coordinates, and it will show it on Google Maps (blue pin, if you click on it, it tells you the
