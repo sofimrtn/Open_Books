@@ -210,11 +210,11 @@
     </libro>
     <!--- +++++++++++++++++++++++++++++++ -->
     <libro>
-        <titulo>One Way Trip</titulo>
+        <titulo>Becoming</titulo>
         <autores>
             <autor>
-                <nombre>Scott</nombre>
-                <apellidos>McEwen</apellidos>
+                <nombre>Michele</nombre>
+                <apellidos>Obama</apellidos>
                 <nacionalidad>American</nacionalidad>
             </autor>
             <autor>
@@ -265,20 +265,19 @@
                         <id>English</id>
                         <paginas>400</paginas>
                         <isbn>
-                            <isbn10>1476746052</isbn10>
-                            <isbn13>9781476746050</isbn13>
+                            <isbn10>1524763136</isbn10>
+                            <isbn13>1524763136</isbn13>
                         </isbn>
                     </idioma>
                 </idiomas>
             </edicion>
         </ediciones>
         <puntuacion>4.25</puntuacion>
-        <sinopsis>From the coauthor of Chris Kyle’s #1 New York Times bestseller, American Sniper: In direct defiance of
-            the president’s orders, Navy Master Chief Gil Shannon, one of America’s most lethal SEAL snipers, launches a
-            bold mission comprised of SEAL Team Six and Delta Force fighters to free a captured female helicopter pilot
-            being held by Taliban insurgents in Afghanistan.
+        <sinopsis>In a life filled with meaning and accomplishment, Michelle Obama has emerged as one of the most iconic
+            and compelling women of our era. ... Warm, wise, and revelatory, Becoming is the deeply personal reckoning
+            of a woman of soul and substance who has steadily defied expectations—and whose story inspires us to do the same.
         </sinopsis>
-        <portada>http://covers.openlibrary.org/b/isbn/1501120719-M.jpg</portada>
+        <portada>http://covers.openlibrary.org/b/isbn/1524763136-M.jpg</portada>
         <comentarios>
             <comentario>
                 <usuario>Paladdin</usuario>
@@ -476,16 +475,16 @@
     </libro>
     <!--- +++++++++++++++++++++++++++++++ -->
     <libro>
-        <titulo>The Woman in the Window</titulo>
+        <titulo>The Road</titulo>
         <autores>
             <autor>
-                <nombre>A.J.</nombre>
-                <apellidos>Finn</apellidos>
+                <nombre>Cormac</nombre>
+                <apellidos>McCarthy</apellidos>
                 <nacionalidad>American</nacionalidad>
             </autor>
         </autores>
-        <año>2018</año>
-        <editorial>William Morrow</editorial>
+        <año>2006</año>
+        <editorial>Vintage International</editorial>
         <ediciones>
             <edicion>
                 <numero>3rd</numero>
@@ -527,18 +526,18 @@
                         <paginas>429</paginas>
                         <isbn>
                             <isbn10>0062678418</isbn10>
-                            <isbn13>9780062678416</isbn13>
+                            <isbn13>978030738789</isbn13>
                         </isbn>
                     </idioma>
                 </idiomas>
             </edicion>
         </ediciones>
         <puntuacion>3.94</puntuacion>
-        <sinopsis>Anna Fox lives alone—a recluse in her New York City home, unable to venture outside. She spends her
-            day drinking wine (maybe too much), watching old movies, recalling happier times . . . and spying on her
-            neighbors.
+        <sinopsis>It is a post-apocalyptic novel detailing the journey of a father and his young son over a period of
+            several months, across a landscape blasted by an unspecified cataclysm that has destroyed most of civilization
+            and, in the intervening years, almost all life on Earth.
         </sinopsis>
-        <portada>http://covers.openlibrary.org/b/isbn/0062678418-M.jpg</portada>
+        <portada>http://covers.openlibrary.org/b/isbn/978030738789-M.jpg</portada>
         <comentarios>
             <comentario>
                 <usuario>Uiamtse</usuario>
