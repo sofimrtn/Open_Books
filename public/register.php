@@ -18,7 +18,7 @@ try {
          header('location:myBooks.php');
      }
      else {
-         header('location:register.html');
+         header('location:../register.html');
      }
 } catch (Exception $e) {
     header('location: error.php?message=' . $e->getMessage());

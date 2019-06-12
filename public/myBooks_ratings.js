@@ -30,6 +30,7 @@ class ClienteServicio {
             subjects=info.subjects.map(p => p.name)
                 .join(', ');
             $('#subject-popup').text(subjects);
+
         }
         if(info.number_of_pages==null){
             $('#pages-popup').text('not specified');
