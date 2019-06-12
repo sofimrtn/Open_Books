@@ -70,4 +70,4 @@ class FileXML {
         $("button").attr("disabled","disabled");
     }
 }
-let loadedBooks = new FileXML("books.xml");
+let loadedBooks = new FileXML("public/books.xml");
