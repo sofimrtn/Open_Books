@@ -82,7 +82,9 @@
 
         function showOnMap(latitude, longitude){
 
-            marker.setMap(null);
+            if (marker !== null) {
+                marker.setMap(null);
+            }
 
             var geocoder = new google.maps.Geocoder();
             var infowindow = new google.maps.InfoWindow;
