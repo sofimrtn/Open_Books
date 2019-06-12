@@ -20,7 +20,7 @@ try {
          header('location:myBooks.php');
      }
      else {
-         header('location:login.html');
+         header('location:../login.html');
      }
 } catch (Exception $e) {
     header('location: error.php?message=' . $e->getMessage());
